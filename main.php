@@ -14,10 +14,10 @@ $request->setRequestMethod('GET');
 */
 
 $request->setQuery(new http\QueryString(array(
-    'connection_id' => '... My SMS Gateway Connection ID ...',
-	'password' => '... My SMS Gateway Password ...',
-	'to' => '07xyzzzzzz',
-	'message' => 'My Test Message'
+'connection_id' => '... My SMS Gateway Connection ID ...',
+'password' => '... My SMS Gateway Password ...',
+'to' => '07xyzzzzzz',
+'message' => 'My Test Message'
 )));
 
 $client->enqueue($request)->send();
