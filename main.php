@@ -3,6 +3,13 @@
 $client = new http\Client;
 $request = new http\Client\Request;
 
+/*
+
+  HTTPS API Endpoint:  https://secure.smslink.ro/sms/gateway/communicate/index.php
+  HTTP API Endpoint:   http://www.smslink.ro/sms/gateway/communicate/index.php
+
+*/
+
 $request->setRequestUrl('https://secure.smslink.ro/sms/gateway/communicate/index.php');
 $request->setRequestMethod('GET');
 
